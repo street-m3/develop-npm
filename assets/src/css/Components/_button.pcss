@@ -1,0 +1,295 @@
+/*----------  init Button  ----------*/
+.c-button {
+    background-image: none;
+    color: #ffffff;
+    display: inline-block;
+    font-family: "Lobster Two", cursive;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    min-width: 160px;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    white-space: nowrap;
+}
+
+/*----------  Button 01  ----------*/
+.pattern-01 {
+    background: #d90429;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+.pattern-01:hover:after {
+    left: 0;
+    width: 100%;
+}
+.pattern-01:after {
+    background-color: #ef233c;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.3s ease;
+    width: 0;
+    z-index: -1;
+}
+.pattern-01:active {
+    top: 2px;
+}
+
+/*----------  Button 02  ----------*/
+.pattern-02 {
+    background: #57cc99;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+}
+.pattern-02:hover {
+    background-color: #80ed99;
+}
+.pattern-02:active {
+    top: 2px;
+}
+
+/*----------  Button 03  ----------*/
+.pattern-03 {
+    background-image: linear-gradient(315deg, #4ecdc4 0%, #c797eb 75%);
+    background-size: 120% auto;
+    border-radius: 5px;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+}
+.pattern-03:hover {
+    background-position: right center;
+}
+.pattern-03:active {
+    top: 2px;
+}
+
+/*----------  Button 04  ----------*/
+.pattern-04 {
+    background: #ffe566;
+    border-radius: 5px;
+    box-shadow: 0 5px #ffd819;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+}
+.pattern-04:hover {
+    box-shadow: 0 3px #ffd819;
+    top: 1px;
+}
+.pattern-04:active {
+    box-shadow: 0 0 #ffd819;
+    top: 5px;
+}
+
+/*----------  Button 05  ----------*/
+.pattern-05 {
+    padding: 12px 24px;
+}
+.pattern-05 span {
+    color: #ffffff;
+    display: inline-block;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.pattern-05::before {
+    background-color: #343a40;
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    transition: transform 0.2s ease-in-out;
+    width: 100%;
+}
+.pattern-05::after {
+    border: 1px solid #474e51;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: transform 0.2s ease-in-out;
+    width: 100%;
+}
+.pattern-05:hover::before {
+    transform: translate(6px, -4px);
+}
+.pattern-05:hover::after {
+    transform: translate(-6px, 4px);
+}
+
+/*----------  Button 06  ----------*/
+.pattern-06 {
+    background: transparent;
+    border: 1px solid #000000;
+    padding: 11px 24px;
+    transition: all 0.3s ease;
+}
+.pattern-06:after {
+    background-color: #ff6392;
+    content: "";
+    height: 100%;
+    left: 5px;
+    position: absolute;
+    top: 5px;
+    transition: 0.2s;
+    width: 100%;
+    z-index: -1;
+}
+.pattern-06:hover:after {
+    left: 0;
+    top: 0;
+}
+
+/*----------  Button 07  ----------*/
+.pattern-07 {
+    background: #495057;
+    border: 2px solid #495057;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+}
+.pattern-07:hover {
+    background: #ffffff;
+    color: #495057;
+}
+
+/*----------  Button 08  ----------*/
+.pattern-08 {
+    background-color: #ced4da;
+    border-radius: 5px;
+    box-shadow: 0 3px 1px -2px #cccccc, 0 2px 2px 0 #cccccc, 0 1px 5px 0 #cccccc;
+    color: #ffffff;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+}
+.pattern-08:active {
+    box-shadow: 0 4px 2px -3px #cccccc, 0 4px 5px 1px #cccccc, 0 2px 7px 1px #cccccc;
+}
+
+/*----------  Button 09  ----------*/
+.pattern-09 {
+    background: #ffffff;
+    border: 2px solid #2c0b8e;
+    border-radius: 5px;
+    color: #ffffff;
+    color: #2c0b8e;
+    overflow: hidden;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    z-index: 0;
+}
+.pattern-09:hover {
+    color: #ffffff;
+}
+.pattern-09:hover:after {
+    width: 100%;
+}
+.pattern-09:after {
+    background: #2c0b8e;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s ease;
+    width: 0;
+    z-index: -1;
+}
+
+/*----------  Button 10  ----------*/
+.pattern-10 {
+    background: #ffffff;
+    border: 2px solid #4433ff;
+    border-radius: 5px;
+    color: #ffffff;
+    color: #4433ff;
+    overflow: hidden;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    z-index: 0;
+}
+.pattern-10:hover {
+    color: #ffffff;
+}
+.pattern-10:hover:after {
+    height: 100%;
+}
+.pattern-10:after {
+    background: #4433ff;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s ease;
+    width: 100%;
+    z-index: -1;
+}
+
+/*----------  Button 10  ----------*/
+.pattern-11 {
+    background-image: linear-gradient(315deg, #833ab4 0%, #fd1d1d 50%, #fcb045);
+    background-size: 120% auto;
+    border-radius: 5px;
+    color: #ffffff;
+    overflow: hidden;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+}
+.pattern-11:hover {
+    background-position: right center;
+    border-radius: 5px;
+    padding-left: 8px;
+    padding-right: 24px;
+}
+.pattern-11:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+.pattern-11:after {
+    content: "\f101";
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 40px;
+    opacity: 0;
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.4s;
+}
+
+/*----------  Button 12  ----------*/
+.pattern-12 {
+    background: #efefef;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #c8d0e7, -1px -1px 3px #ffffff;
+    color: #ffffff;
+    color: #585858;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+}
+.pattern-12:active {
+    box-shadow: inset 1px 1px 3px #c8d0e7, inset -1px -1px 3px #ffffff;
+}

@@ -1,0 +1,65 @@
+.c-accordion-item {
+    border: 1px solid #dddddd;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.c-accordion-item:last-child {
+    margin-bottom: 0;
+}
+.c-accordion-header {
+    background-color: #f7f6f9;
+    color: #333333;
+}
+.c-accordion-tab {
+    align-items: center;
+    color: inherit;
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+.c-accordion-tab:focus-visible {
+    outline: 2px solid #1d64d0;
+}
+.c-accordion-tabicon {
+    color: inherit;
+    display: inline-block;
+    height: 1em;
+    margin-left: 1em;
+    pointer-events: none;
+    position: relative;
+    width: 1em;
+}
+.c-accordion-tabicon::before,
+.c-accordion-tabicon::after {
+    background-color: #333333;
+    bottom: 0;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+.c-accordion-tabicon::after {
+    transform: rotate(90deg);
+    transition: transform 0.3s;
+}
+.c-accordion-header.is-open-panel .c-accordion-tabicon::after {
+    transform: rotate(180deg);
+}
+.c-accordion-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+.c-accordion-content {
+    line-height: 1.75;
+    padding: 1.5rem;
+}

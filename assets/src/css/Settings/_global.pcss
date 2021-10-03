@@ -1,0 +1,59 @@
+
+/* プロジェクトで横断的に使用される値を変数として定義します。 */
+
+/* --------------------------------------------------------------------------
+    #Breakpoint
+-------------------------------------------------------------------------- */
+@custom-media --xs screen and (min-width: 0);
+@custom-media --sm screen and (min-width: 576px);
+@custom-media --md screen and (min-width: 768px);
+@custom-media --lg screen and (min-width: 992px);
+@custom-media --xl screen and (min-width: 1200px);
+@custom-media --xxl screen and (min-width:1400px);
+
+@custom-media --max-xs screen and (max-width: 575.9px);
+@custom-media --max-sm screen and (max-width: 768.9px);
+@custom-media --max-md screen and (max-width: 991.9px);
+@custom-media --max-lg screen and (max-width: 1199.9px);
+@custom-media --max-xl screen and (max-width: 1339.9px);
+
+/* --------------------------------------------------------------------------
+    #z-index
+-------------------------------------------------------------------------- */
+$z-index-map: (
+    slide-panel,
+    header,
+    header-brand,
+    header-fixed, 
+    topscroll-button,
+    footer-fixed,
+    drawer-overlay,
+    drawer-menulist
+    drawer-button
+);
+
+$zindex-drop: 1000;
+$zindex-sticky: 1020;
+$zindex-fixed: 1030;
+$zindex-modal-backdrop: 1040;
+$zindex-modal: 1050;
+$zindex-popover: 1060;
+$zindex-tooltip: 1070;
+
+/* --------------------------------------------------------------------------
+    #Contents Layout Inner
+-------------------------------------------------------------------------- */
+
+$layout-inner: 1100px;
+$layout-inner-sm: 800px;
+
+/* --------------------------------------------------------------------------
+    #Other Variables
+-------------------------------------------------------------------------- */
+$opacity: 0.6;
+
+$border-rd10: 10px;
+$border-rd50: 50% ;
+$border-rd100: 100% ;
+
+$transition: all 0.3s ease 0s;

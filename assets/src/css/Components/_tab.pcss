@@ -1,0 +1,36 @@
+.tab-component__list {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.tab-component__item {
+    flex: 1;
+}
+.tab-component__list .tab-component__item:not(:first-child) {
+    margin-left: 5px;
+}
+.tab-component__item--button {
+    background-color: #eee;
+    border-radius: 8px;
+    cursor: pointer;
+    color: inherit;
+    font-weight: 500;
+    height: 100%;
+    padding: 10px;
+    width: 100%;
+}
+.tab-component__item--button[aria-selected="true"] {
+    background-color: #027bfb;
+    color: #fff;
+    font-weight: 500;
+}
+.tab-component-panels {
+    margin-top: 8px;
+}
+.tab-component-panel {
+    border: 1px solid #eee;
+    border-radius: 0 0 8px 8px;
+    padding: 1.2rem 1rem;
+}
+.tab-component-panel[aria-hidden="true"] {
+    display: none;
+}

@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "*.pcss": "postcss",
+        "*.css": "postcss"
+    },
+    "emmet.includeLanguages": {
+        "postcss": "css"
+    },
+    "emmet.syntaxProfiles": {
+        "postcss": "css"
+    },
+}
