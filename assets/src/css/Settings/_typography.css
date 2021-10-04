@@ -1,0 +1,12 @@
+/* Font-Family */
+$font-family: Noto Sans JP’,“Yu Gothic”,“YuGothic”,“Hiragino Kaku Gothic Pro”, 
+“Meiryo”,verdana,“Osaka”,“MS PGothic”,Sans-Serif;
+$basefont-size: 16px;
+$spfont-size: 14.4px;
+
+//Letter-spacingの基準値
+$letter-spacing: 0.02em;
+$font-future-setting: palt 1;
+
+/* Fontawesome 5 Free */
+$Awesome: "Font Awesome 5 Free";
