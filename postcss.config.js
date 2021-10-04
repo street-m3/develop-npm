@@ -2,15 +2,17 @@ module.exports = (ctx) => ({
     plugins: {
         "postcss-import-ext-glob": {},
         "postcss-import": {},
+        "postcss-mixins": {},
+        "postcss-preset-env": {
+            stage: 0,
+        },
         "postcss-cssnext": {},
-        // "postcss-map-get": {},
         "postcss-simple-vars": {
             silent: true,
         },
         "postcss-nested": {},
         "postcss-mixins": {},
         "postcss-extend": {},
-        "postcss-reporter": {},
         "postcss-color-function": {},
         'postcss-sorting': {
             'order': [
