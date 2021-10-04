@@ -3,14 +3,13 @@ module.exports = (ctx) => ({
         "postcss-import-ext-glob": {},
         "postcss-import": {},
         "postcss-cssnext": {},
-        "postcss-mixins": {},
         // "postcss-map-get": {},
         "postcss-simple-vars": {
             silent: true,
         },
         "postcss-nested": {},
+        "postcss-mixins": {},
         "postcss-extend": {},
-        "postcss-calc": {},
         "postcss-reporter": {},
         "postcss-color-function": {},
         'postcss-sorting': {
@@ -24,8 +23,6 @@ module.exports = (ctx) => ({
             'properties-order': 'alphabetical',
             'unspecified-properties-position': 'bottom'
         },
-        
-        "autoprefixer": {},
         "postcss-sort-media-queries": {}, //
         "cssnano": {
             "autoprefixer": false,
