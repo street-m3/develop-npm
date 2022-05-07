@@ -281,7 +281,7 @@ module.exports = {
     // ],
     
     output: {
-        path: `${__dirname}/dist/js`,
+        path: `${__dirname}/assets/dist/js`,
         filename: "main.js"
     },
 
