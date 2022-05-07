@@ -302,7 +302,6 @@ PostCSSを導入したことによって、小規模であれば問題なく使�
 PostCSSという選択肢の幅が広がり、自分のやりたいことが広がった記事です。とても感謝しております。ありがとうございます。
 
 ## 参考
-- [ITCSSを採用して共同開発しやすいCSS設計をZOZOTOWNに導入した話から引用](https://techblog.zozo.com/entry/itcss-to-zozotown)
+- [ITCSSを採用して共同開発しやすいCSS設計をZOZOTOWNに導入した話](https://techblog.zozo.com/entry/itcss-to-zozotown)
 
-- 公式 "基本的な使い方は公式から確認"
-[公式](https://github.com/postcss/postcss)
+- [PostCSS](https://github.com/postcss/postcss)
