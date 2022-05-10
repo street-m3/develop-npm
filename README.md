@@ -4,8 +4,8 @@ PostCSSを導入したことがなかったので、忘備録としてスター�
 ## PostCSSを導入した背景
 転職活動に向けてポートフォリオ作成をしたいと思い、現在のアセットで進めようと考えていましたが、もっと使いやすい構成にしたいと考えたため「PostCSS」をはじめてみようと思いました。
 <br>
-今までの開発環境では、Gulpを用いてSCSSのコンパイル圧縮やHTMLの構文チェックなどのシンプルな仕様でした。大規模な開発など関わることが無いためです。<br>
-FLOCCSは有名なCSS設計手法の一つですが、詳細度を管理する目的などで新たにフォルダを追加したくなっても構造を維持するためにネストしなければいけなくなり、融通が効きません。<br>
+今までの開発環境では、Gulpを用いてSCSSのコンパイル圧縮やHTMLの構文チェックなどのシンプルな仕様でした。大規模な開発など関わることがないためです。<br>
+FLOCCSは有名なCSS設計手法のひとつですが、詳細度を管理する目的などで新たにフォルダーを追加したくなっても構造を維持するためにネストしなければいけなくなり、融通が効きません。<br>
 現状の構成を組み直すのは時間と手間がかかるため、根本的にCSS設計を見直すことにしました。
 <br>
 <br>
@@ -16,7 +16,7 @@ CSS設計は「ITCSS」を導入することにしました。
 <br>
 <br>
 <q>
-ITCSSは、CSS Wizardy の Harry Roberts氏が提唱したCSSの詳細度を管理する設計思想です。ITCSSのレイヤーは、必要に応じて追加・削除することも許容されます。
+ITCSSは、CSS WizardyのHarry Roberts氏が提唱したCSSの詳細度を管理する設計思想です。ITCSSのレイヤーは、必要に応じて追加・削除することも許容されます。
 </q>
 
 <small>[ITCSSを採用して共同開発しやすいCSS設計をZOZOTOWNに導入した話から引用](https://techblog.zozo.com/entry/itcss-to-zozotown)</small>
@@ -111,7 +111,7 @@ src
 
 ### 必要なモジュールをインストールする
 ```` bash
-npm install npm-run-all onchange rimraf cpx mkdirp watch @babel/cli @babel/core @babel/preset-env browser-sync postcss postcss-cli postcss-preset-env postcss-import-ext-glob postcss-import postcss-mixins postcss-simple-vars postcss-nested postcss-extend-rule postcss-calc postcss-pxtorem postcss-reporter postcss-sorting postcss-sort-media-queries cssnano sharp-cli --save-dev
+npm install npm-run-all onchange rimraf cpx mkdirp watch webpack webpack-cli  @babel/cli @babel/core @babel/preset-env browser-sync postcss postcss-cli postcss-preset-env postcss-import-ext-glob postcss-import postcss-mixins postcss-simple-vars postcss-nested postcss-extend-rule postcss-calc postcss-pxtorem postcss-reporter postcss-sorting postcss-sort-media-queries cssnano sharp-cli --save-dev
 ````
 
 ### npm scriptsを構成する
@@ -295,12 +295,12 @@ module.exports = {
 ``npm run watch``
 
 ## PostCSSを導入して感じたこと
-PostCSSを導入したことによって、npmの細かな動きを知れたこと、環境さえ整えれば問題なく使えること、そして何より使いやすくて軽快、無駄がない環境が作れたと思っています。
+PostCSSを導入したことによって、npmの細かな動きを知れたこと、環境さえ整えれば問題なく使えること、そして何より使いやすくて軽快、ムダがない環境を作れたと思っています。
 <br>
 ただ、パッケージの選定にややコストがかかる印象です。そのことを考えるとSCSSも検討しなければならないかも知れません。
 
 
-個人的な見解としては、変数管理は全てCSS変数にした方が個人的に理解しやすくて、無駄がないかなと思っています。極力参照するファイルは一つにしたいためです。
+個人的な見解としては、変数管理はすべてCSS変数にすることで、デバッグのしやすさと参照ファイルを減らせることができ、誰がみてもわかりやすい形なのかなと思っています。
 
 
 今回参考のさせていただいたサイトにZOZOTOWNさんのテックブログがあります。
