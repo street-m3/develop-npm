@@ -2,29 +2,81 @@
     #Base
 -------------------------------------------------------------------------- */
 :root {
-  --font-size-default: 16px;
-}
-
-@media (--sm) {
-  :root {
-    --font-size-default: 14px;
-  }
-}
-
-@media (--lg) {
-  :root {
+    --color-main: #014bb4;
+    --color-text: #393939;
+    --color-caption: #696969;
+    --color-label: #898989;
+    --color-dropdown: #dce5f4;
+    --color-table-border: #484848;
+    --color-bg: #f2f2f2;
+    --color-black: #000;
+    --color-white: #ffffff;
+    --color-breadcrumb: #acacac;
+    --color-border-list: #D5D5D5;
+    --color-border-base: #707070;
+    --color-border-accordion: #95989A;
+    --font-sans-ja: 'Noto Sans JP', 'Yu Gothic', 'YuGothic', 'Hiragino Kaku Gothic Pro', 'Meiryo', verdana, 'Osaka', 'MS PGothic', sans-serif;
+    --font-serif-ja: 'Noto Serif JP', YuMincho, 'Yu Mincho', 'Hiragino Mincho ProN', 'Hiragino Mincho Pro', serif;
+    --font-sans-en: 'Affogato', sans-serif;
+    --font-serif-en: 'Cormorant Garamond', serif;
     --font-size-default: 16px;
-  }
+    --font-size-mobile: 14.4px;
+    --font-size-xxl: 36px;
+    --font-size-xl: 28px;
+    --font-size-lg: 21px;
+    --font-size-md: 18px;
+    --font-size-sm: 14px;
+    --font-size-xs: 11px;
+    --font-weight-base: 500;
+    --font-weight-normal: 400;
+    --font-weight-title: 500;
+    --leading-default: 1.4em;
+    --leading-body: 1.4;
+    --leading-none: 1em;
+    --leading-x-tight: 1.2em;
+    --leading-tight: 1.3em;
+    --leading-base: 1.5em;
+    --leading-snug: 1.6em;
+    --leading-relaxed: 1.8em;
+    --leading-loose: 1.9em;
+    --leading-x-loose: 2.2em;
+    --layout-inner-xxl: 1920px;
+    --layout-inner-xl: 1400px;
+    --layout-inner-lg: 1200px;
+    --layout-inner-md: 911px;
+    --layout-inner-sm: 800px;
+    --tracking-wide: 0.05em;
+    --tracking-widest: 0.14em;
+    --tracking-wider: 0.09em;
+    --tracking-relaxed: 0.08em;
+    --zindex-Fixed-header: 100;
+    --zindex-dropdown-nav: 110;
+    --zindex-header-brand: 120;
+    --zindex-scroll-btn: 130;
+    --zindex-drawer-overlay: 140;
+    --zindex-drawer-nav: 150;
+    --zindex-drawer-btn: 160;
+    --zindex-pointer: 10001;
+    --zindex-modal-container: 10000;
+    --zindex-animate-layer01: 12000;
+    --zindex-animate-layer02: 12001;
+    --zindex-animate-layer03: 12002;
+    --zindex-animate-layer04: 12003;
 }
 
 body {
-  background-color: $white;
-  color: $font-color-primary;
-  font-size: var(--font-size-default);
-  font-weight: normal;
-  line-height: 1.5;
-  overflow-x: hidden;
-  text-rendering: optimizeLegibility;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-sans-ja);
+    font-size: var(--font-size-mobile);
+    font-weight: var(--font-weight-base);
+    line-height: var(--leading-body);
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+
+    @media (--sm) {
+        font-size: var(--font-size-default);
+    }
 }
 
 /**
@@ -34,22 +86,22 @@ body {
  */
 
 a {
-  background-color: transparent;
-  color: inherit;
-  text-decoration: none;
-  vertical-align: baseline;
+    background-color: transparent;
+    color: inherit;
+    text-decoration: none;
+    vertical-align: baseline;
 }
 
 a:link,
 a:visited,
 a:hover,
 a:active {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 a:active,
 a:hover {
-  outline-width: 0;
+    outline-width: 0;
 }
 
 /**
@@ -60,8 +112,8 @@ a:hover {
 
 abbr[title],
 dfn[title] {
-  border-bottom: 1px dotted;
-  cursor: help;
+    border-bottom: 1px dotted;
+    cursor: help;
 }
 
 /**
@@ -72,15 +124,15 @@ dfn[title] {
 
 blockquote,
 q {
-  quotes: none;
+    quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
-  content: none;
+    content: "";
+    content: none;
 }
 
 /**
@@ -90,12 +142,12 @@ q:after {
  */
 
 button {
-  appearance: none;
-  background-color: transparent;
-  border: none;
-  color: inherit;
-  cursor: pointer;
-  font: inherit;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
 }
 
 /**
@@ -105,7 +157,7 @@ button {
  */
 
 del {
-  text-decoration: line-through;
+    text-decoration: line-through;
 }
 
 /**
@@ -120,43 +172,43 @@ h3,
 h4,
 h5,
 h6 {
-  color: inherit;
-  display: block;
-  font-size: 100%;
-  font-weight: bold;
-  font-family: inherit;
-  line-height: 1.2em;
-  margin-top: 0;
+    color: inherit;
+    display: block;
+    font-size: 100%;
+    font-weight: bold;
+    font-family: inherit;
+    line-height: 1.2em;
+    margin-top: 0;
 }
 
 h1,
 .u-h1 {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 h2,
 .u-h2 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 h3,
 .u-h3 {
-  font-size: 1.75rem;
+    font-size: 1.75rem;
 }
 
 h4,
 .u-h4 {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 h5,
 .u-h5 {
-  font-size: 1.25rem;
+    font-size: 1.25rem;
 }
 
 h6,
 .u-h6 {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
 /**
@@ -166,11 +218,11 @@ h6,
  */
 
 hr {
-  border-top: 1px solid #cccccc;
-  display: block;
-  height: 1px;
-  margin: 1em 0;
-  padding: 0;
+    border-top: 1px solid #cccccc;
+    display: block;
+    height: 1px;
+    margin: 1em 0;
+    padding: 0;
 }
 
 /**
@@ -181,21 +233,21 @@ cite,
 em,
 address,
 dfn {
-  font-style: normal;
+    font-style: normal;
 }
 
 pre {
-  width: 100%;
-  white-space: pre;
-  word-break: normal;
-  word-spacing: normal;
-  word-wrap: normal;
+    width: 100%;
+    white-space: pre;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
 }
 
 code {
-  position: relative;
-  display: block;
-  color: #fff;
+    position: relative;
+    display: block;
+    color: #fff;
 }
 
 /**
@@ -205,16 +257,16 @@ code {
  */
 
 img {
-  border: none;
-  border-style: none;
-  height: auto;
-  max-height: 100%;
-  vertical-align: top;
+    border: none;
+    border-style: none;
+    height: auto;
+    max-height: 100%;
+    vertical-align: top;
 }
 
 img,
 video {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 /**
@@ -226,15 +278,15 @@ video {
 input,
 select,
 textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  background-image: none;
-  border: none;
-  border-radius: 0;
-  color: inherit;
-  font: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    border-radius: 0;
+    color: inherit;
+    font: inherit;
 }
 
 input[type="text"],
@@ -251,35 +303,35 @@ input[type="time"],
 input[type="number"],
 input[type="submit"],
 input[type="button"] {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 input:focus,
 textarea:focus {
-  box-shadow: none;
+    box-shadow: none;
 }
 
 input[type="radio"]:checked+label {
-  background-color: #ff0000;
+    background-color: #ff0000;
 }
 
 input[type="submit"] {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 input[type="submit"],
 input[type="button"],
 label,
 select {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 select::-ms-expand {
-  display: none;
+    display: none;
 }
 
 textarea {
-  resize: none;
+    resize: none;
 }
 
 /**
@@ -289,9 +341,9 @@ textarea {
  */
 
 ins {
-  background-color: #ffff99;
-  color: #000000;
-  text-decoration: none;
+    background-color: #ffff99;
+    color: #000000;
+    text-decoration: none;
 }
 
 /**
@@ -302,8 +354,8 @@ ins {
 
 li,
 ol {
-  list-style: none;
-  list-style-type: none;
+    list-style: none;
+    list-style-type: none;
 }
 
 /**
@@ -313,7 +365,7 @@ ol {
  */
 
 legend {
-  color: #000000;
+    color: #000000;
 }
 
 /**
@@ -323,10 +375,10 @@ legend {
  */
 
 mark {
-  background-color: #ffff99;
-  color: #000000;
-  font-style: italic;
-  font-weight: bold;
+    background-color: #ffff99;
+    color: #000000;
+    font-style: italic;
+    font-weight: bold;
 }
 
 /**
@@ -336,8 +388,8 @@ mark {
  */
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /**
@@ -347,14 +399,14 @@ table {
  */
 
 [hidden] {
-  display: none !important;
+    display: none !important;
 }
 
 [disabled] {
-  cursor: not-allowed;
+    cursor: not-allowed;
 }
 
 [hover] {
-  border: none;
-  outline: none;
+    border: none;
+    outline: none;
 }

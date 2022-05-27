@@ -1,10 +1,42 @@
-@define-mixin clearfix {
+/* 
+ *  {string} args float専用clearfix。bothなどの値を設定する。
+    .navigation {
+        @add-mixin clearfix;
+    }
+ */
+@define-mixin clearfix $args {
     &::after {
         content: "";
         display: table;
-        clear: both;
+        clear: $args;
     }
 }
-/* .navigation {
-    @add-mixin clearfix;
+
+/* 
+ * {number} @add-mixin clamp 21, 414; 最終的に使用する場所に変数が渡ってくる。
+ * .element {
+        @add-mixin clamp 21, 414;
+        padding: clamp(21px, var(--clamp-size), 40px);
+    }
+*/
+@define-mixin clamp $size, $mq {
+    & {
+        --clamp-size: calc(($size / $mq) * 100)vw;
+        min-height: 0vw;
+    }
+}
+
+/* @add-mixin clamp-test 150, 100;
+& {
+    prop: clamp(--clamp-size);
 } */
+
+@define-mixin clamp-test $sizeMax, $sizeMin {
+    --a: calc(100 * ($sizeMax - $sizeMin) / (var(--comp-base-upper) - var(--comp-base-lower)));
+    --b: calc($sizeMin - (var(--comp-base-lower) / 100) * var(--a));
+    --c: calc($sizeMin * 1px);
+    --d: calc(var(--a) * 1vw + var(--b) * 1px);
+    --e: calc($sizeMax * 1px);
+    --clamp-size: clamp(var(--c), var(--d), var(--e));
+    min-height: 0vw;
+}
